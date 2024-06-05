@@ -15,6 +15,17 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
+  name: james.chandler
+spec:
+  profile:
+    # Intentional no displayName for testing
+    email: james.chandler@trace3.com
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
+  memberOf: [team-a]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
   name: brent.rogers
 spec:
   profile:
